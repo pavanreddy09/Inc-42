@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 120px;
+    background-color: rgb(236, 65, 2);
+
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav i {
+    margin-left: 10px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+section {
+    background-color: whitesmoke;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 15px 35px hsla(0, 0%, .2);
+    z-index: 100;
+}
+
+section ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+}
+
+section a {
+    text-decoration: none;
+    color: hsl(180, 1%, 52%);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: indigo;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 537px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: -1;
+}
+
+.start-btn {
+    margin-top: 100px;
+    height: 40px;
+    width: 100px;
+}
+
+.start-btn button {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #338188;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+p {
+    color: hsl(180, 1%, 30%);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+        float: right;
+        margin-top: -30px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    section {
+        z-index: 100;
+        height: 0;
+        overflow: hidden;
+    }
+
+    section.active {
+        height: auto;
+    }
+
+    section ul {
+        flex-direction: column;
+        width: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+        z-index: 100;
+    }
+
+    section li {
+        padding: 10px;
+    }
+
+    h1 {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
